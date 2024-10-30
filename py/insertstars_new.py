@@ -62,7 +62,7 @@ def insertstars(inputRA,inputDEC,seed=42,out_fn='teststars.txt'):
     for j in range(0,template_index): 
         for k in range(0,extinct_bin):
             for l in range(0,2):
-                star_index=int(j+template_index*l)#+(2*template_index)*k + template_starting_point)  
+                star_index=int(j+template_index*l+(2*template_index)*k)# + template_starting_point)  
                 #print(star_index,j,l,k,template_starting_point)
                 for i in range(0,star_lth):
                
@@ -76,7 +76,7 @@ def insertstars(inputRA,inputDEC,seed=42,out_fn='teststars.txt'):
                         newDEC=((y_new-ydim2)*pixscale/3600.0)+inputDEC
                         radDec=(newDEC/180.0)*np.pi
                         newRA=inputRA-(((x_new-xdim2)*pixscale/3600.0)/np.cos(radDec))
-                        print(star_index,j,l,k,template_starting_point)
+                        #print(star_index,j,l,k,template_starting_point)
                         star_list[0][count]=count
                         star_list[1][count]=x_new
                         star_list[2][count]=y_new
