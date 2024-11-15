@@ -154,7 +154,7 @@ if __name__ == '__main__':
     github_dir='/Users/ross.1333/Documents/GitHub/'
     figs = []
     #types in pheonix library
-    stellar_types = ['F0V','K0V','M0V','B0V','G0V']
+    stellar_types = ['B0V','A0V','F0V','K0V','G0V','M0V']
     for tp in stellar_types:
         fig = plt.figure()
         plot_extract_star_spec(star_type=tp)
