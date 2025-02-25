@@ -10,7 +10,7 @@ export PYTHONPATH=$PYTHONPATH:$star_fields/py
 
 Download extinction maps: https://www.dropbox.com/scl/fi/ivq5qi5cjhv7tahxiqdl8/NICERmaps.tar?rlkey=s0ymcsilvt3wvnpr8ehpdzd65&dl=0
 
-unpack (e.g., tar -xvf NICERmaps.tar)
+unpack (e.g., tar xvf NICERmaps.tar)
 
 export allskyext=<where you downloaded NICERmaps.tar>/NICERmaps
 
