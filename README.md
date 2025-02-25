@@ -17,6 +17,8 @@ export allskyext=<where you downloaded NICERmaps.tar>/NICERmaps
 Then, the basic code should work, e.g.:
 
 python
->import insertstars_new as insert
->insert.insertstars(0,0) #creates a text file with distribution of stars centered at ra,dec=0,0 within area of one Roman field of view
+
+import insertstars_new as insert
+
+insert.insertstars(0,0) #creates a text file with distribution of stars centered at ra,dec=0,0 within area of one Roman field of view
 
